@@ -73,10 +73,10 @@
                <li class="menu-item {{ Route::is('dataMaster') ? 'active' : '' }} ">
                    <a href="javascript:void(0);" class="menu-link menu-toggle">
                        <i class="menu-icon tf-icons bx bx-layout"></i>
-                       <div data-i18n="Layouts" style="color: black">Data Master</div>
+                       <div data-i18n="Layouts" style="color: black">Server</div>
                    </a>
 
-                   <ul class="menu-sub">
+                   {{-- <ul class="menu-sub">
                        @can('read user')
                            <li class="menu-item">
                                <a href="{{ route('dataMaster') }}" class="menu-link">
@@ -84,8 +84,8 @@
                                </a>
                            </li>
                        @endcan
-                   </ul>
-                   <ul class="menu-sub">
+                   </ul> --}}
+                   {{-- <ul class="menu-sub">
                        @can('read paket')
                            <li class="menu-item {{ Route::is('route.pelanggans') ? 'active' : '' }}">
                                <a href="{{ route('route.pelanggans') }}" class="menu-link">
@@ -103,239 +103,17 @@
                                </a>
                            </li>
                        @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read odc')
-                           <li class="menu-item {{ Route::is('route.odc.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.odc.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">ODC</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read odp')
-                           <li class="menu-item {{ Route::is('route.odp.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.odp.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">ODP</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read odp port')
-                           <li class="menu-item {{ Route::is('route.odp-port.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.odp-port.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">ODP PORT</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read merk onu')
-                           <li class="menu-item {{ Route::is('route.merk-onu.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.merk-onu.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Merk ONU</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read type onu')
-                           <li class="menu-item {{ Route::is('route.type-onu.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.type-onu.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Type ONU</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read onu')
-                           <li class="menu-item {{ Route::is('route.onu.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.onu.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">SN ONU</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read port')
-                           <li class="menu-item {{ Route::is('route.port.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.port.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">OLT PORT</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read olt')
-                           <li class="menu-item {{ Route::is('route.olts.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.olts.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">OLT</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
+                   </ul> --}}
 
                    <ul class="menu-sub">
                        @can('read routers')
                            <li class="menu-item {{ Route::is('route.routerss.index') ? 'active' : '' }}">
                                <a href="{{ route('route.routerss.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Routers</div>
+                                   <div data-i18n="Without menu" style="color: black">Mitra 1</div>
                                </a>
                            </li>
                        @endcan
                    </ul>
-               </li>
-
-               <li class="menu-item">
-                   <a href="javascript:void(0);" class="menu-link menu-toggle">
-                       <i class="menu-icon tf-icons bx bx-credit-card"></i>
-                       <div data-i18n="Layouts" style="color: black">Billing</div>
-                   </a>
-                   <ul class="menu-sub">
-                       @can('read loket')
-                           <li class="menu-item {{ Route::is('route.lokets.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.lokets.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Loket</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read kolektor')
-                           <li class="menu-item {{ Route::is('route.kolektors.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.kolektors.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Kolektor</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-               </li>
-
-               <li class="menu-item  ">
-                   <a href="javascript:void(0);" class="menu-link menu-toggle">
-                       <i class="menu-icon tf-icons bx bx-rocket"></i>
-                       <div data-i18n="Layouts" style="color: black">Service</div>
-                   </a>
-
-
-                   <ul class="menu-sub">
-                       @can('read pendaftaran')
-                           <!-- Sidebar admin dan sales -->
-                           <li class="menu-item {{ Route::is('route.pemasangans') ? 'active' : '' }}">
-                               <a href="{{ route('route.pemasangans') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Pemasangan</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-
-                   <ul class="menu-sub">
-                       @can('read ubah paket')
-                           <li class="menu-item {{ Route::is('route.ubah_pakets.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.ubah_pakets.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Ubah Paket</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read mutasi')
-                           <li class="menu-item {{ Route::is('route.mutasis.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.mutasis.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Mutasi</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read pemutusan')
-                           <li class="menu-item {{ Route::is('route.pemutusans.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.pemutusans.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Pemutusan</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read perbaikan')
-                           <li class="menu-item {{ Route::is('route.perbaikans.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.perbaikans.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Perbaikan</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-               </li>
-
-               <li class="menu-item ">
-                   <a href="javascript:void(0);" class="menu-link menu-toggle">
-                       <i class="menu-icon tf-icons bx bx-devices"></i>
-                       <div data-i18n="Layouts" style="color: black">Managemen Perangkat</div>
-                   </a>
-                   <ul class="menu-sub">
-                       @can('read router')
-                           <li class="menu-item {{ Route::is('route.routers.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.routers.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">Router</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read olt')
-                           <li class="menu-item {{ Route::is('route.olts.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.olts.index') }}" class="menu-link">
-                                   <div data-i18n="Without menu" style="color: black">OLT</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-               </li>
-
-               <li class="menu-item ">
-                   <a href="javascript:void(0);" class="menu-link menu-toggle">
-                       <i class="menu-icon tf-icons bx bx-file-find"></i>
-                       <div data-i18n="Layouts" style="color: black">Report</div>
-                   </a>
-                   <ul class="menu-sub">
-                       @can('read pembayaran')
-                           <li class="menu-item {{ Route::is('route.pembayarans.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.pembayarans.index') }}" class="menu-link">
-                                   <div data-i18n="Boxicons" style="color: black">Pembayaran</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-
-                   <ul class="menu-sub">
-                       @can('read tunggakan')
-                           <li class="menu-item {{ Route::is('route.tunggakans.index') ? 'active' : '' }}">
-                               <a href="{{ route('route.tunggakans.index') }}" class="menu-link">
-                                   <div data-i18n="Boxicons" style="color: black">Tunggakan</div>
-                               </a>
-                           </li>
-                       @endcan
-                   </ul>
-               </li>
-
-               <li class="menu-header small text-uppercase">
-                   <span class="menu-header-text">Access</span>
                </li>
 
                @can('read role')
@@ -347,44 +125,12 @@
                    </li>
                @endcan
 
-               @can('read permission')
+               {{-- @can('read permission')
                    <li class="menu-item {{ Route::is('route.permissions.index') ? 'active' : '' }}">
                        <a href="{{ route('route.permissions.index') }}" class="menu-link">
                            <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
                            <div data-i18n="Tables" style="color: black">Permission</div>
                        </a>
                    </li>
-               @endcan
-
-               <li class="menu-header small text-uppercase">
-                   <span class="menu-header-text">Settings</span>
-               </li>
-
-               {{-- @can('read setting')
-                   <li class="menu-item {{ Route::is('route.settings.index') ? 'active' : '' }}">
-                       <a href="{{ route('route.settings.index') }}" class="menu-link">
-                           <i class="menu-icon tf-icons bx bx-cog"></i>
-                           <div data-i18n="Boxicons" style="color: black">Report</div>
-                       </a>
-                   </li>
                @endcan --}}
-
-               @can('read file manager')
-                   <li class="menu-item {{ Route::is('route.files.index') ? 'active' : '' }}">
-                       <a href="{{ route('route.files.index') }}" class="menu-link">
-                           <i class="menu-icon tf-icons bx bx-folder-open"></i>
-                           <div data-i18n="Boxicons" style="color: black">File Manager</div>
-                       </a>
-                   </li>
-               @endcan
-
-               @can('read module')
-                   <li class="menu-item {{ Route::is('route.modules.index') ? 'active' : '' }}">
-                       <a href="{{ route('route.modules.index') }}" class="menu-link">
-                           <i class="menu-icon tf-icons bx bx-box"></i>
-                           <div data-i18n="Boxicons" style="color: black">Module</div>
-                       </a>
-                   </li>
-               @endcan
-
        </aside>

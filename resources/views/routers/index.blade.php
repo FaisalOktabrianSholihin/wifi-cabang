@@ -2,7 +2,7 @@
 @section('content')
     <div class="content">
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4" style="color: white"><span class="text-muted fw-light">Data Master /</span> Routers
+            <h4 class="fw-bold py-3 mb-4" style="color: white"><span class="text-muted fw-light">Server /</span> Mitra 1
             </h4>
             <div class="card">
                 <div class="card-body">
